@@ -1,5 +1,8 @@
 package com.example.blog.services;
 
-//public interface UserService {
-//    void saveUser(User user);
-//}
+import com.example.blog.entities.User;
+
+public interface UserService {
+    User findByUserName(String name);
+    void saveUser(User user);
+}
